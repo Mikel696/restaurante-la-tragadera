@@ -27,7 +27,9 @@ export default function ContactoPage() {
           {/* Contact Form */}
           <div className="md:w-1/2">
             <h2 className="text-2xl font-bold text-brand-dark mb-4">Envíanos un Mensaje</h2>
-            <ContactForm />
+            <div className="p-4 border rounded-lg text-center text-gray-500">
+              Formulario de Contacto (temporalmente deshabilitado)
+            </div>
           </div>
         </div>
       </div>

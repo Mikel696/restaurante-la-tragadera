@@ -2,55 +2,22 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { FaBars, FaTimes } from 'react-icons/fa'; // Keep for mobile toggle
+import { FaBars, FaTimes } from 'react-icons/fa'; // For mobile toggle icons
 
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-} from "@/components/ui/navigation-menu"; // Only import necessary parts
+} from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
-
-  const navLinks = (
-    <>
-      <NavigationMenuItem>
-        <Link href="/" legacyBehavior passHref>
-          <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors block py-2 md:py-0 px-3 rounded-md">
-            Inicio
-          </NavigationMenuLink>
-        </Link>
-      </NavigationMenuItem>
-      <NavigationMenuItem>
-        <Link href="/menu" legacyBehavior passHref>
-          <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors block py-2 md:py-0 px-3 rounded-md">
-            Menú
-          </NavigationMenuLink>
-        </Link>
-      </NavigationMenuItem>
-      <NavigationMenuItem>
-        <Link href="/promos" legacyBehavior passHref> {/* Assuming a /promos page */}
-          <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors block py-2 md:py-0 px-3 rounded-md">
-            Promos
-          </NavigationMenuLink>
-        </Link>
-      </NavigationMenuItem>
-      <NavigationMenuItem>
-        <Link href="/contacto" legacyBehavior passHref>
-          <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors block py-2 md:py-0 px-3 rounded-md">
-            Contacto
-          </NavigationMenuLink>
-        </Link>
-      </NavigationMenuItem>
-    </>
-  );
 
   return (
     <header className="bg-brand-dark shadow-md sticky top-0 z-50">
@@ -62,11 +29,38 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Desktop Menu and WhatsApp Button */}
+        {/* Desktop Navigation and WhatsApp Button */}
         <div className="hidden md:flex items-center space-x-6">
           <NavigationMenu>
-            <NavigationMenuList className="flex space-x-2"> {/* Added flex and space-x-2 for desktop spacing */}
-              {navLinks}
+            <NavigationMenuList className="flex space-x-2">
+              <NavigationMenuItem>
+                <Link href="/" legacyBehavior passHref>
+                  <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors px-3 py-2 rounded-md">
+                    Inicio
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/menu" legacyBehavior passHref>
+                  <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors px-3 py-2 rounded-md">
+                    Menú
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/promos" legacyBehavior passHref>
+                  <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors px-3 py-2 rounded-md">
+                    Promos
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/contacto" legacyBehavior passHref>
+                  <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors px-3 py-2 rounded-md">
+                    Contacto
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
 
@@ -76,22 +70,49 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden flex items-center space-x-4"> {/* Added flex and space-x-4 for button and toggle */}
+        <div className="md:hidden flex items-center space-x-4">
           <Button variant="default" size="sm" className="bg-green-500 hover:bg-green-600 text-white">
             WhatsApp
           </Button>
-          <button onClick={toggleMenu} className="text-white focus:outline-none">
-            {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          <button onClick={toggleMobileMenu} className="text-white focus:outline-none">
+            {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
         </div>
       </nav>
 
       {/* Mobile Menu Overlay */}
-      {isOpen && (
+      {isMobileMenuOpen && (
         <div className="md:hidden bg-brand-dark">
-          <NavigationMenu> {/* Wrap mobile links in NavigationMenu as well */}
+          <NavigationMenu className="w-full"> {/* Ensure NavigationMenu takes full width in mobile */}
             <NavigationMenuList className="flex flex-col px-6 pt-2 pb-4 space-y-2">
-              {navLinks}
+              <NavigationMenuItem>
+                <Link href="/" legacyBehavior passHref>
+                  <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors block py-2 px-3 rounded-md w-full text-left">
+                    Inicio
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/menu" legacyBehavior passHref>
+                  <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors block py-2 px-3 rounded-md w-full text-left">
+                    Menú
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/promos" legacyBehavior passHref>
+                  <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors block py-2 px-3 rounded-md w-full text-left">
+                    Promos
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/contacto" legacyBehavior passHref>
+                  <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors block py-2 px-3 rounded-md w-full text-left">
+                    Contacto
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
               <NavigationMenuItem>
                 <Button variant="default" size="default" className="bg-green-500 hover:bg-green-600 text-white w-full">
                   Pide por WhatsApp

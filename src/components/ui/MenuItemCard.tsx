@@ -1,6 +1,6 @@
 import Image from 'next/image'; // Re-import Image
 import type { MenuItem } from '@/data/menu';
-import Button from './Button';
+import { Button } from '@/components/ui/button';
 // Removed: import PlaceholderImage from './PlaceholderImage';
 
 interface MenuItemCardProps {

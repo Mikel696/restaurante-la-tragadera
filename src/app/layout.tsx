@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Anton, Montserrat } from "next/font/google"; // Import Anton and Montserrat
 import "./globals.css";
-import Header from "@/components/layout/Header";
-import Footer from "@/app/components/Footer"; // New Footer path
+import Header from "@/components/layout/Header"; // Added back
+import Footer from "@/app/components/Footer"; // Added back
 
 const anton = Anton({
   subsets: ["latin"],
@@ -28,9 +28,9 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${montserrat.variable} ${anton.variable} font-montserrat flex flex-col min-h-screen bg-brand-light`}>
-        <Header />
+        <Header /> {/* Added back */}
         <main className="flex-grow">{children}</main>
-        <Footer />
+        <Footer /> {/* Added back */}
       </body>
     </html>
   );
