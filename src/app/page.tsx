@@ -2,6 +2,7 @@ import { menuItems } from "@/data/menu";
 import MenuItemCard from "@/components/ui/MenuItemCard";
 import AnimationWrapper from "@/components/ui/AnimationWrapper";
 import HeroSection from "@/app/components/HeroSection"; // Import the new HeroSection
+// This is a test change for the webhook.
 
 export default function Home() {
   const featuredItems = menuItems.slice(0, 3);
