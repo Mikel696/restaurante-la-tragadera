@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Desarrollo del Proyecto</title>
+    <style>body { font-family: sans-serif; padding: 20px; } .entry { border: 1px solid #ccc; padding: 10px; margin-bottom: 15px; }</style>
+</head>
+<body>
+    <h1>Registro de Desarrollo del Proyecto</h1>
+    <div class="entry">
+                <h3>Paso 1: Inicialización del Proyecto y Documentación</h3>
+                <p><strong>Fecha:</strong> 22 de septiembre de 2025</p>
+                <p><strong>Qué se hizo:</strong></p>
+                <ul>
+                    <li>Se configuró manualmente la estructura de un proyecto Next.js tras encontrar problemas con la herramienta interactiva <code>create-next-app</code>.</li>
+                    <li>Se creó <code>package.json</code> con las dependencias necesarias (Next, React, TypeScript, Tailwind CSS).</li>
+                    <li>Se generaron los archivos de configuración (<code>next.config.mjs</code>, <code>tsconfig.json</code>, <code>tailwind.config.ts</code>, <code>postcss.config.mjs</code>).</li>
+                    <li>Se estableció la estructura de carpetas <code>src/app</code> con una página de inicio y layout base.</li>
+                    <li>Se instalaron las dependencias con <code>npm install</code> y se corrigió una vulnerabilidad de seguridad con <code>npm audit fix --force</code>.</li>
+                    <li>Se crearon los archivos de seguimiento <code>registro_desarrollo.html</code> y <code>descripcion_proyecto.html</code>.</li>
+                </ul>
+                <p><strong>Por qué se hizo:</strong></p>
+                <p>Para establecer la base tecnológica y la estructura de documentación del proyecto, superando los obstáculos técnicos con la herramienta de scaffolding y asegurando un inicio de proyecto limpio y seguro.</p>
+                <p><strong>Archivos modificados/creados:</strong></p>
+                <ul>
+                    <li><code>package.json</code></li>
+                    <li><code>tsconfig.json</code></li>
+                    <li><code>next.config.mjs</code></li>
+                    <li><code>tailwind.config.ts</code></li>
+                    <li><code>postcss.config.mjs</code></li>
+                    <li><code>.gitignore</code></li>
+                    <li><code>src/app/globals.css</code></li>
+                    <li><code>src/app/layout.tsx</code></li>
+                    <li><code>src/app/page.tsx</code></li>
+                    <li><code>registro_desarrollo.html</code></li>
+                    <li><code>descripcion_proyecto.html</code></li>
+                </ul>
+            </div>
+            <div class="entry">
+        <h3>Paso 2: Limpieza y Estructura de Componentes</h3>
+        <p><strong>Fecha:</strong> 22 de septiembre de 2025</p>
+        <p><strong>Qué se hizo:</strong></p>
+        <ul>
+            <li>Se limpió el contenido por defecto de la página de inicio (<code>src/app/page.tsx</code>) y se reemplazó con una estructura semántica básica.</li>
+            <li>Se creó la estructura de carpetas <code>src/components/layout</code> y <code>src/components/ui</code> para organizar los componentes reutilizables.</li>
+        </ul>
+        <p><strong>Por qué se hizo:</strong></p>
+        <p>Para establecer un punto de partida limpio para la página de inicio y organizar el proyecto de forma escalable, separando los componentes por su función (de estructura vs. de interfaz).</p>
+        <p><strong>Archivos modificados/creados:</strong></p>
+        <ul>
+            <li><code>src/app/page.tsx</code></li>
+            <li><code>src/components/layout/.gitkeep</code> (creado)</li>
+            <li><code>src/components/ui/.gitkeep</code> (creado)</li>
+            <li><code>registro_desarrollo.html</code></li>
+            <li><code>descripcion_proyecto.html</code></li>
+        </ul>
+    </div>
+    <div class="entry">
+    <h3>Paso 3: Paleta de Colores Provisional y Componente Header</h3>
+    <p><strong>Fecha:</strong> 22 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se definió una paleta de colores provisional (rojo, amarillo, neutros) para la marca "La Tragadera" debido a la imposibilidad de acceder a su branding real.</li>
+        <li>Se actualizaron las variables de tema en <code>tailwind.config.ts</code> para incluir estos nuevos colores (e.g., <code>brand-red</code>).</li>
+        <li>Se creó el primer componente de layout: <code>src/components/layout/Header.tsx</code>, una barra de navegación con un logo de texto y enlaces.</li>
+        <li>Se integró el componente <code>Header</code> en el archivo principal <code>src/app/layout.tsx</code> para que sea visible en todo el sitio.</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>Para avanzar con el desarrollo de la interfaz a pesar de no tener los activos de marca finales. Esto establece la identidad visual base del sitio y crea el componente de navegación principal, una pieza clave de la estructura de la web.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>tailwind.config.ts</code></li>
+        <li><code>src/components/layout/Header.tsx</code> (creado)</li>
+        <li><code>src/app/layout.tsx</code></li>
+        <li><code>registro_desarrollo.html</code></li>
+        <li><code>descripcion_proyecto.html</code></li>
+    </ul>
+</div>
+<div class="entry">
+    <h3>Paso 4: Componente Button y Mejora de la Sección Hero</h3>
+    <p><strong>Fecha:</strong> 22 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se creó un componente de UI reutilizable: <code>src/components/ui/Button.tsx</code>. El componente acepta variantes de estilo ('primary', 'secondary') y es altamente personalizable.</li>
+        <li>Se actualizó la página de inicio (<code>src/app/page.tsx</code>) para convertirla en una sección "Hero" más atractiva.</li>
+        <li>Se importó y utilizó el nuevo componente <code>Button</code> en la página de inicio, enlazándolo a la futura página de menú.</li>
+        <li>Se mejoró el texto y la capacidad de respuesta del diseño de la sección Hero.</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>Para crear un elemento de UI fundamental y reutilizable (el botón) y para dar a la página de inicio un aspecto más profesional y un propósito claro con una llamada a la acción, mejorando la primera impresión del usuario.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>src/components/ui/Button.tsx</code> (creado)</li>
+        <li><code>src/app/page.tsx</code></li>
+        <li><code>registro_desarrollo.html</code></li>
+        <li><code>descripcion_proyecto.html</code></li>
+    </ul>
+</div>
+<div class="entry">
+    <h3>Paso 5: Creación de Páginas Provisionales</h3>
+    <p><strong>Fecha:</strong> 22 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se creó la página para el Menú en <code>src/app/menu/page.tsx</code> con contenido provisional.</li>
+        <li>Se creó la página de Contacto en <code>src/app/contacto/page.tsx</code> con contenido provisional.</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>Para asegurar que todos los enlaces de la barra de navegación principal sean funcionales y no dirijan a errores 404. Esto hace que el prototipo sea más robusto y ofrezca una experiencia de usuario completa, aunque el contenido de las páginas sea básico.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>src/app/menu/page.tsx</code> (creado)</li>
+        <li><code>src/app/contacto/page.tsx</code> (creado)</li>
+        <li><code>registro_desarrollo.html</code></li>
+        <li><code>descripcion_proyecto.html</code></li>
+    </ul>
+</div>
+<div class="entry">
+    <h3>Paso 6: Creación del Componente Footer</h3>
+    <p><strong>Fecha:</strong> 22 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se creó el componente <code>src/components/layout/Footer.tsx</code> con información de copyright y enlaces a redes sociales.</li>
+        <li>Se integró el <code>Footer</code> en el layout principal (<code>src/app/layout.tsx</code>).</li>
+        <li>Se ajustó la estructura del layout con Flexbox para asegurar que el footer se mantenga al final de la página (sticky footer).</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>Para completar la estructura de layout básica y profesional del sitio (Header, Main, Footer), proporcionando un pie de página consistente en toda la aplicación.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>src/components/layout/Footer.tsx</code> (creado)</li>
+        <li><code>src/app/layout.tsx</code></li>
+        <li><code>registro_desarrollo.html</code></li>
+        <li><code>descripcion_proyecto.html</code></li>
+    </ul>
+</div>
+<div class="entry">
+    <h3>Paso 7: Desarrollo de la Página de Menú</h3>
+    <p><strong>Fecha:</strong> 22 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se definió una estructura de datos para los productos del menú en <code>src/data/menu.ts</code>, incluyendo datos de ejemplo.</li>
+        <li>Se creó un nuevo componente de UI: <code>src/components/ui/MenuItemCard.tsx</code>, para mostrar de forma atractiva cada producto con su imagen, nombre, descripción y precio.</li>
+        <li>Se actualizó la página de Menú (<code>src/app/menu/page.tsx</code>) para obtener los datos del menú y renderizar una cuadrícula responsiva de tarjetas de producto.</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>Para implementar una de las funcionalidades más críticas del sitio web de un restaurante. Esto separa los datos de la presentación y crea un sistema modular y escalable para gestionar y mostrar el menú.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>src/data/menu.ts</code> (creado)</li>
+        <li><code>src/components/ui/MenuItemCard.tsx</code> (creado)</li>
+        <li><code>src/app/menu/page.tsx</code></li>
+        <li><code>registro_desarrollo.html</code></li>
+        <li><code>descripcion_proyecto.html</code></li>
+    </ul>
+</div>
+<div class="entry">
+    <h3>Paso 8: Sección de Productos Destacados en la Portada</h3>
+    <p><strong>Fecha:</strong> 22 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se añadió una nueva sección de "Nuestros Destacados" en la página de inicio (<code>src/app/page.tsx</code>).</li>
+        <li>Se reutilizó el componente <code>MenuItemCard</code> para mostrar los primeros 3 productos del menú en esta nueva sección.</li>
+        <li>Se importaron los datos del menú para alimentar la sección.</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>Para enriquecer la página de inicio con contenido dinámico y atractivo, incentivar a los usuarios a explorar el menú y demostrar la eficiencia de la arquitectura de componentes reutilizables.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>src/app/page.tsx</code></li>
+        <li><code>registro_desarrollo.html</code></li>
+    </ul>
+</div>
+<div class="entry">
+    <h3>Paso 9: Formulario de Contacto Interactivo</h3>
+    <p><strong>Fecha:</strong> 22 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se creó un nuevo componente de UI con estado: <code>src/components/ui/ContactForm.tsx</code>.</li>
+        <li>El formulario es un componente de cliente ('use client') que utiliza <code>useState</code> para manejar las entradas del usuario.</li>
+        <li>Se integró el <code>ContactForm</code> en la página de Contacto (<code>src/app/contacto/page.tsx</code>).</li>
+        <li>Se mejoró el diseño de la página de contacto a un formato de dos columnas para una mejor presentación de la información y el formulario.</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>Para añadir una funcionalidad interactiva clave que permita a los usuarios comunicarse con el negocio directamente desde el sitio web, mejorando la usabilidad y profesionalismo de la página de contacto.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>src/components/ui/ContactForm.tsx</code> (creado)</li>
+        <li><code>src/app/contacto/page.tsx</code></li>
+        <li><code>registro_desarrollo.html</code></li>
+        <li><code>descripcion_proyecto.html</code></li>
+    </ul>
+</div>
+<div class="entry">
+    <h3>Paso 10: Implementación de Menú Móvil (Responsive Header)</h3>
+    <p><strong>Fecha:</strong> 22 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se añadió la librería <code>react-icons</code> para los iconos del menú.</li>
+        <li>Se convirtió el componente <code>Header.tsx</code> a un componente de cliente ('use client') para poder manejar estado.</li>
+        <li>Se implementó un estado <code>isOpen</code> para controlar la visibilidad del menú móvil.</li>
+        <li>Se añadió un botón de "hamburguesa" que se muestra solo en pantallas pequeñas y alterna el estado del menú.</li>
+        <li>Se creó un menú desplegable para móviles que muestra los enlaces de navegación verticalmente.</li>
+        <li>Se utilizó CSS de Tailwind para hacer el header fijo en la parte superior (sticky).</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>Para asegurar que el sitio web sea completamente funcional y se vea profesional en dispositivos móviles, lo cual es un requisito fundamental para la web moderna. Esto mejora drásticamente la experiencia de usuario en pantallas pequeñas.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>package.json</code></li>
+        <li><code>src/components/layout/Header.tsx</code></li>
+        <li><code>registro_desarrollo.html</code></li>
+        <li><code>descripcion_proyecto.html</code></li>
+    </ul>
+</div>
+<div class="entry">
+    <h3>Paso 11: Implementación de Animaciones</h3>
+    <p><strong>Fecha:</strong> 22 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se añadió la librería <code>framer-motion</code> para la gestión de animaciones.</li>
+        <li>Se creó un componente reutilizable <code>AnimationWrapper.tsx</code> para aplicar un efecto de "fade-in al hacer scroll".</li>
+        <li>Se aplicó el wrapper de animación a las secciones de la página de inicio y a las tarjetas de producto en la página de menú.</li>
+        <li>En la página de menú, se añadió un retraso escalonado a la animación de cada tarjeta para un efecto visual más dinámico.</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>Para mejorar la experiencia de usuario y dar al sitio un aspecto más moderno y profesional. Las animaciones sutiles guían la atención del usuario y hacen que la navegación se sienta más fluida y agradable.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>package.json</code></li>
+        <li><code>src/components/ui/AnimationWrapper.tsx</code> (creado)</li>
+        <li><code>src/app/page.tsx</code></li>
+        <li><code>src/app/menu/page.tsx</code></li>
+        <li><code>registro_desarrollo.html</code></li>
+        <li><code>descripcion_proyecto.html</code></li>
+    </ul>
+</div>
+<div class="entry">
+    <h3>Paso 12: Implementación de Placeholders de Imagen</h3>
+    <p><strong>Fecha:</strong> 22 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se creó un componente <code>PlaceholderImage.tsx</code> para mostrar una caja de color con texto en lugar de un icono de imagen rota.</li>
+        <li>Se actualizó el componente <code>MenuItemCard.tsx</code> para utilizar el nuevo placeholder, mejorando la apariencia visual del sitio en ausencia de imágenes reales.</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>Para dar al prototipo un aspecto más pulido y profesional, eliminando los iconos de imágenes rotas y proporcionando un placeholder visualmente más agradable y contextual.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>src/components/ui/PlaceholderImage.tsx</code> (creado)</li>
+        <li><code>src/components/ui/MenuItemCard.tsx</code></li>
+        <li><code>registro_desarrollo.html</code></li>
+        <li><code>descripcion_proyecto.html</code></li>
+    </ul>
+</div>
+<!-- PROYECTO FINALIZADO -->
+</body>
+</html>

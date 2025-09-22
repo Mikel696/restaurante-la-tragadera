@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descripción Completa del Proyecto</title>
+    <style>body { font-family: sans-serif; padding: 20px; } h2 { border-bottom: 2px solid #000; padding-bottom: 5px; } .component { margin-left: 20px; border-left: 2px solid #ccc; padding-left: 15px; }</style>
+</head>
+<body>
+    <h1>Descripción Completa del Proyecto</h1>
+    <section id="general">
+        <h2>1. Descripción General</h2>
+        <p>Plantilla web profesional para locales comerciales. El proyecto base es para el restaurante 'La Tragadera'.</p>
+        <p><strong>Stack Tecnológico:</strong> Next.js, React, TypeScript, Tailwind CSS.</p>
+    </section>
+    <section id="estructura">
+        <h2>2. Estructura de Archivos</h2>
+        <p>La estructura del proyecto se configuró manually para seguir las mejores prácticas. La estructura principal es:</p>
+            <ul>
+                <li><strong>/src:</strong> Contiene todo el código fuente de la aplicación.
+                    <ul>
+                        <li><strong>/app:</strong> Contiene los archivos de enrutamiento, páginas y layouts de la aplicación (App Router). Cada subcarpeta representa una ruta.
+                            <ul>
+                                <li><code>/ (raíz)</code>: Contiene el layout global (<code>layout.tsx</code>), la página de inicio (<code>page.tsx</code>) y los estilos globales (<code>globals.css</code>).</li>
+                                <li><code>/menu</code>: Página para el menú del restaurante.</li>
+                                <li><code>/contacto</code>: Página para la información de contacto.</li>
+                            </ul>
+                        </li>
+                        <li><strong>/components:</strong> Carpeta para todos los componentes de React reutilizables.
+                            <ul>
+                                <li><strong>/layout:</strong> Componentes relacionados con la estructura de la página (Header, Footer, Sidebar, etc.).</li>
+                                <li><strong>/ui:</strong> Pequeños componentes de interfaz de usuario (Botones, Inputs, Cards, etc.).</li>
+                            </ul>
+                        </li>
+                        <li><strong>/data:</strong> Almacena datos estáticos de la aplicación, como la información del menú (<code>menu.ts</code>).</li>
+                    </ul>
+                </li>
+                <li><strong>/public:</strong> Para almacenar archivos estáticos como imágenes, fuentes, etc.</li>
+                <li><strong>/node_modules:</strong> Contiene todas las dependencias del proyecto instaladas vía npm.</li>
+                <li><strong>package.json:</strong> Define los scripts del proyecto (<code>dev</code>, <code>build</code>, etc.) y las dependencias.</li>
+                <li><strong>next.config.mjs:</strong> Archivo de configuración para Next.js.</li>
+                <li><strong>tailwind.config.ts:</strong> Archivo de configuración para Tailwind CSS.</li>
+                <li><strong>tsconfig.json:</strong> Archivo de configuración para TypeScript.</li>
+                <li><strong>postcss.config.mjs:</strong> Archivo de configuración para PostCSS, usado por Tailwind.</li>
+                <li><strong>.gitignore:</strong> Especifica los archivos y carpetas que Git debe ignorar.</li>
+            </ul>
+    </section>
+    <section id="componentes">
+        <h2>3. Componentes de la Interfaz (UI)</h2>
+
+        <div class="component">
+            <h4>Header.tsx</h4>
+            <p><strong>Ubicación:</strong> <code>src/components/layout/Header.tsx</code></p>
+            <p><strong>Propósito:</strong> Es la barra de navegación principal, fija en la parte superior y totalmente responsiva.</p>
+            <p><strong>Funcionalidades:</strong></p>
+            <ul>
+                <li>Es un Componente de Cliente ('use client') que usa estado para el menú móvil.</li>
+                <li>Muestra los enlaces de navegación principales en pantallas de escritorio.</li>
+                <li>En pantallas pequeñas, muestra un botón de "hamburguesa" que despliega un menú vertical.</li>
+                <li>Utiliza iconos de la librería <code>react-icons</code>.</li>
+            </ul>
+        </div>
+
+        <div class="component">
+            <h4>Footer.tsx</h4>
+            <p><strong>Ubicación:</strong> <code>src/components/layout/Footer.tsx</code></p>
+            <p><strong>Propósito:</strong> Es el pie de página principal del sitio.</p>
+            <p><strong>Funcionalidades:</strong></p>
+            <ul>
+                <li>Muestra el año de copyright dinámicamente.</li>
+                <li>Contiene placeholders para enlaces a redes sociales.</li>
+                <li>Se mantiene al final de la página gracias a la estructura Flexbox del layout principal.</li>
+            </ul>
+        </div>
+
+        <div class="component">
+            <h4>Button.tsx</h4>
+            <p><strong>Ubicación:</strong> <code>src/components/ui/Button.tsx</code></p>
+            <p><strong>Propósito:</strong> Componente de botón reutilizable para toda la aplicación.</p>
+            <p><strong>Props:</strong></p>
+            <ul>
+                <li><code>children</code>: Contenido del botón.</li>
+                <li><code>variant ('primary' | 'secondary')</code>: Define el estilo visual.</li>
+                <li>Acepta todos los atributos estándar de un botón HTML.</li>
+            </ul>
+        </div>
+
+        <div class="component">
+            <h4>MenuItemCard.tsx</h4>
+            <p><strong>Ubicación:</strong> <code>src/components/ui/MenuItemCard.tsx</code></p>
+            <p><strong>Propósito:</strong> Tarjeta para mostrar un producto del menú de forma atractiva.</p>
+            <p><strong>Props:</strong></p>
+            <ul>
+                <li><code>item (MenuItem)</code>: Objeto con la información del producto.</li>
+            </ul>
+        </div>
+
+        <div class="component">
+            <h4>ContactForm.tsx</h4>
+            <p><strong>Ubicación:</strong> <code>src/components/ui/ContactForm.tsx</code></p>
+            <p><strong>Propósito:</strong> Formulario de contacto interactivo y reutilizable.</p>
+            <p><strong>Funcionalidades:</strong></p>
+            <ul>
+                <li>Componente de Cliente ('use client') que maneja el estado de los campos.</li>
+                <li>Realiza una acción de envío (actualmente, a la consola) y muestra un mensaje de éxito.</li>
+            </ul>
+        </div>
+
+        <div class="component">
+    <h4>AnimationWrapper.tsx</h4>
+    <p><strong>Ubicación:</strong> <code>src/components/ui/AnimationWrapper.tsx</code></p>
+    <p><strong>Propósito:</strong> Un componente de cliente reutilizable que anima a sus hijos (children) para que aparezcan con un efecto de "fade-in" y deslizamiento hacia arriba cuando entran en el viewport.</p>
+    <p><strong>Props:</strong></p>
+    <ul>
+        <li><code>children</code>: Los elementos a animar.</li>
+        <li><code>delay (opcional)</code>: Un retraso en segundos para iniciar la animación.</li>
+        <li><code>className (opcional)</code>: Clases CSS adicionales para el div contenedor.</li>
+    </ul>
+    <p><strong>Funcionalidades:</strong></p>
+    <ul>
+        <li>Utiliza el hook <code>useInView</code> de Framer Motion para detectar la visibilidad.</li>
+        <li>La animación se ejecuta solo una vez por defecto.</li>
+    </ul>
+</div>
+<div class="component">
+            <h4>PlaceholderImage.tsx</h4>
+            <p><strong>Ubicación:</strong> <code>src/components/ui/PlaceholderImage.tsx</code></p>
+            <p><strong>Propósito:</strong> Muestra un placeholder visualmente agradable para imágenes.</p>
+        </div>
+        <!-- PROYECTO FINALIZADO -->
+    </section>
+</body>
+</html>
