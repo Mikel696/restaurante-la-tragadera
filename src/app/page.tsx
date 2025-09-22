@@ -1,7 +1,11 @@
 import { menuItems } from "@/data/menu";
 import MenuItemCard from "@/components/ui/MenuItemCard";
 import AnimationWrapper from "@/components/ui/AnimationWrapper";
-import HeroSection from "@/app/components/HeroSection"; // Import the new HeroSection
+import dynamic from "next/dynamic"; // Import dynamic
+
+// Dynamically import HeroSection with ssr: false
+const HeroSection = dynamic(() => import("@/app/components/HeroSection"), { ssr: false });
+
 // This is a test change for the webhook.
 
 export default function Home() {
