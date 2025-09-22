@@ -2,8 +2,10 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { promociones } from '@/lib/data'; // Import promociones
+import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -38,9 +40,14 @@ const HeroSection = () => {
               {promociones[currentIndex].titulo}
             </h1>
             {/* CTA Button */}
-            <a href="https://wa.me/573148342452" target="_blank" rel="noopener noreferrer" className="absolute bottom-10 bg-primary text-dark font-bold py-3 px-6 rounded-lg text-lg hover:scale-105 transition-transform">
-              Pide por WhatsApp
-            </a>
+            <Link href="https://wa.me/573148342452" passHref legacyBehavior>
+              <Button
+                size="lg"
+                className="absolute bottom-10 bg-primary text-dark font-bold py-3 px-6 rounded-lg text-lg hover:scale-105 transition-transform"
+              >
+                Pide por WhatsApp
+              </Button>
+            </Link>
           </div>
         </motion.div>
       </AnimatePresence>
