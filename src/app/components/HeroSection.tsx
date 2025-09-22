@@ -16,7 +16,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-80 md:h-[500px] bg-dark overflow-hidden">
+    <section className="relative w-full h-screen bg-dark overflow-hidden">
       <AnimatePresence initial={false}>
         <motion.div
           key={currentIndex}
@@ -34,9 +34,13 @@ const HeroSection = () => {
             priority // Load the first banner image with high priority
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <h2 className="text-light text-4xl md:text-6xl font-anton text-center leading-tight">
+            <h1 className="text-light text-4xl md:text-6xl font-anton text-center leading-tight">
               {promociones[currentIndex].titulo}
-            </h2>
+            </h1>
+            {/* CTA Button */}
+            <a href="https://wa.me/573148342452" target="_blank" rel="noopener noreferrer" className="absolute bottom-10 bg-primary text-dark font-bold py-3 px-6 rounded-lg text-lg hover:scale-105 transition-transform">
+              Pide por WhatsApp
+            </a>
           </div>
         </motion.div>
       </AnimatePresence>
