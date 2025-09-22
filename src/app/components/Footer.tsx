@@ -11,7 +11,7 @@ const Footer = () => {
         {/* Subsección 1: Contacto y Dirección */}
         <div className="text-center md:text-left">
           <h3 className="text-primary text-xl font-bold mb-2">Contacto</h3>
-          <p className="text-sm">Dirección: Carrera 20 Este # 31-13 Sur, Hogares Soacha</p>
+          <p className="text-sm">Dirección: Centro Comercial Jardín, Local 303, Soacha</p>
           {/* Add other contact info if needed, e.g., phone, email */}
         </div>
 
