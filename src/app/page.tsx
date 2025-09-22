@@ -3,13 +3,16 @@ import Link from "next/link";
 import { menuItems } from "@/data/menu";
 import MenuItemCard from "@/components/ui/MenuItemCard";
 import AnimationWrapper from "@/components/ui/AnimationWrapper";
+import BannerCarousel from "@/components/layout/BannerCarousel"; // Import BannerCarousel
 
 export default function Home() {
   const featuredItems = menuItems.slice(0, 3);
 
   return (
     <div className="bg-brand-light text-brand-dark">
+      <BannerCarousel /> {/* Add BannerCarousel here */}
       <main>
+        {/* Hero Section */}
         <AnimationWrapper>
           <section id="hero" className="text-center py-20 md:py-32 px-4">
             <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
@@ -28,6 +31,7 @@ export default function Home() {
           </section>
         </AnimationWrapper>
 
+        {/* Featured Items Section */}
         <AnimationWrapper delay={0.2}>
           <section id="featured" className="py-12 bg-white">
             <div className="container mx-auto px-6">
