@@ -12,6 +12,10 @@
         <h2>1. Descripción General</h2>
         <p>Plantilla web profesional para locales comerciales. El proyecto base es para el restaurante 'La Tragadera'.</p>
         <p><strong>Stack Tecnológico:</strong> Next.js, React, TypeScript, Tailwind CSS.</p>
+        <h3>Librerías de UI</h3>
+        <ul>
+            <li><strong>Shadcn/UI:</strong> Colección de componentes de interfaz de usuario construidos con React y Tailwind CSS, diseñados para ser personalizables y accesibles. Utilizado para elevar la calidad visual y funcional de los componentes clave del proyecto.</li>
+        </ul>
     </section>
     <section id="estructura">
         <h2>2. Estructura de Archivos</h2>
@@ -51,7 +55,7 @@
         <div class="component">
             <h4>Header.tsx</h4>
             <p><strong>Ubicación:</strong> <code>src/components/layout/Header.tsx</code></p>
-            <p><strong>Propósito:</strong> Es la barra de navegación principal, fija en la parte superior y totalmente responsiva.</p>
+            <p><strong>Propósito:</strong> Es la barra de navegación principal, fija en la parte superior y totalmente responsiva. Reconstruido con el componente <code>NavigationMenu</code> de Shadcn/UI para los enlaces de navegación y el componente <code>Button</code> de Shadcn/UI para el llamado a la acción de WhatsApp.</p>
             <p><strong>Funcionalidades:</strong></p>
             <ul>
                 <li>Es un Componente de Cliente ('use client') que usa estado para el menú móvil.</li>
@@ -76,7 +80,7 @@
         <div class="component">
             <h4>Button.tsx</h4>
             <p><strong>Ubicación:</strong> <code>src/components/ui/Button.tsx</code></p>
-            <p><strong>Propósito:</strong> Componente de botón reutilizable para toda la aplicación.</p>
+            <p><strong>Propósito:</strong> Componente de botón reutilizable para toda la aplicación, ahora basado en el componente <code>Button</code> de Shadcn/UI, ofreciendo mayor accesibilidad y opciones de personalización.</p>
             <p><strong>Props:</strong></p>
             <ul>
                 <li><code>children</code>: Contenido del botón.</li>
@@ -88,7 +92,7 @@
         <div class="component">
             <h4>MenuItemCard.tsx</h4>
             <p><strong>Ubicación:</strong> <code>src/components/ui/MenuItemCard.tsx</code></p>
-            <p><strong>Propósito:</strong> Tarjeta para mostrar un producto del menú de forma atractiva.</p>
+            <p><strong>Propósito:</strong> Componente de tarjeta para mostrar un producto del menú. Su funcionalidad principal ha sido reemplazada por el componente <code>Card</code> de Shadcn/UI en la página de menú para una presentación más profesional.</p>
             <p><strong>Props:</strong></p>
             <ul>
                 <li><code>item (MenuItem)</code>: Objeto con la información del producto.</li>

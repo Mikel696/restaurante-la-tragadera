@@ -349,6 +349,32 @@
         <li><code>descripcion_proyecto.html</code></li>
     </ul>
 </div>
+<div class="entry">
+    <h3>Paso 18: Reconstrucción Maestra con Shadcn/UI</h3>
+    <p><strong>Fecha:</strong> 22 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se integró la librería de componentes Shadcn/UI para elevar el estándar visual y funcional del proyecto.</li>
+        <li>Se configuró Shadcn/UI, incluyendo la creación manual de <code>components.json</code> para asegurar su correcta inicialización.</li>
+        <li>Se añadieron los componentes <code>button</code>, <code>navigation-menu</code> y <code>card</code> de Shadcn/UI.</li>
+        <li>Se reconstruyó el componente <code>Header.tsx</code> (anteriormente referido como Navbar) utilizando <code>NavigationMenu</code> para los enlaces de navegación y <code>Button</code> para el llamado a la acción de WhatsApp, manteniendo la funcionalidad de menú móvil existente.</li>
+        <li>Se reconstruyó la sección Hero en <code>HeroSection.tsx</code>, reemplazando el botón HTML por el componente <code>Button</code> de Shadcn/UI con tamaño grande (`size="lg"`).</li>
+        <li>Se reconstruyó la página de Menú (<code>src/app/menu/page.tsx</code>) para mostrar cada producto del menú dentro de un componente <code>Card</code> de Shadcn/UI, utilizando <code>CardHeader</code> para el título y descripción, <code>CardContent</code> para la imagen y <code>CardFooter</code> para el precio y un botón de "Añadir".</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>Para cumplir con el mandato de una reconstrucción maestra, logrando un resultado final visualmente impactante, funcionalmente impecable y profesional, aprovechando los componentes de alta calidad y accesibles que ofrece Shadcn/UI.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>components.json</code> (creado)</li>
+        <li><code>src/components/ui/button.tsx</code> (creado/modificado)</li>
+        <li><code>src/components/ui/navigation-menu.tsx</code> (creado)</li>
+        <li><code>src/components/ui/card.tsx</code> (creado)</li>
+        <li><code>src/components/layout/Header.tsx</code></li>
+        <li><code>src/app/components/HeroSection.tsx</code></li>
+        <li><code>src/app/menu/page.tsx</code></li>
+        <li><code>registro_desarrollo.html</code></li>
+    </ul>
+</div>
 <!-- PROYECTO FINALIZADO -->
 </body>
 </html>
