@@ -9,10 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'brand-red': '#E53E3E',
-        'brand-yellow': '#F6E05E',
-        'brand-light': '#F7FAFC',
-        'brand-dark': '#2D3748',
+        'brand-red': '#DC2626', // Tailwind Red 600
+        'brand-yellow': '#FBBF24', // Tailwind Amber 400
+        'brand-dark': '#1F2937', // Tailwind Gray 800
+        'brand-light': '#F9FAFB', // Tailwind Gray 50
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

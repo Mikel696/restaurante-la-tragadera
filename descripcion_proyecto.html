@@ -11,11 +11,11 @@
     <section id="general">
         <h2>1. Descripción General</h2>
         <p>Plantilla web profesional para locales comerciales. El proyecto base es para el restaurante 'La Tragadera'.</p>
-        <p><strong>Stack Tecnológico:</strong> Next.js, React, TypeScript, Tailwind CSS.</p>
+        <p><strong>Stack Tecnológico:</strong> Next.js, React, TypeScript, Tailwind CSS, Framer Motion, React Icons.</p>
     </section>
     <section id="estructura">
         <h2>2. Estructura de Archivos</h2>
-        <p>La estructura del proyecto se configuró manually para seguir las mejores prácticas. La estructura principal es:</p>
+        <p>La estructura del proyecto se configuró manualmente para seguir las mejores prácticas. La estructura principal es:</p>
             <ul>
                 <li><strong>/src:</strong> Contiene todo el código fuente de la aplicación.
                     <ul>
@@ -93,6 +93,12 @@
             <ul>
                 <li><code>item (MenuItem)</code>: Objeto con la información del producto.</li>
             </ul>
+            <p><strong>Funcionalidades:</strong></p>
+            <ul>
+                <li>Muestra la imagen del producto utilizando <code>next/image</code>.</li>
+                <li>Incluye un botón de "Añadir" (actualmente sin funcionalidad).</li>
+                <li>Tiene un efecto de zoom en la imagen al pasar el cursor.</li>
+            </ul>
         </div>
 
         <div class="component">
@@ -107,26 +113,11 @@
         </div>
 
         <div class="component">
-    <h4>AnimationWrapper.tsx</h4>
-    <p><strong>Ubicación:</strong> <code>src/components/ui/AnimationWrapper.tsx</code></p>
-    <p><strong>Propósito:</strong> Un componente de cliente reutilizable que anima a sus hijos (children) para que aparezcan con un efecto de "fade-in" y deslizamiento hacia arriba cuando entran en el viewport.</p>
-    <p><strong>Props:</strong></p>
-    <ul>
-        <li><code>children</code>: Los elementos a animar.</li>
-        <li><code>delay (opcional)</code>: Un retraso en segundos para iniciar la animación.</li>
-        <li><code>className (opcional)</code>: Clases CSS adicionales para el div contenedor.</li>
-    </ul>
-    <p><strong>Funcionalidades:</strong></p>
-    <ul>
-        <li>Utiliza el hook <code>useInView</code> de Framer Motion para detectar la visibilidad.</li>
-        <li>La animación se ejecuta solo una vez por defecto.</li>
-    </ul>
-</div>
-<div class="component">
-            <h4>PlaceholderImage.tsx</h4>
-            <p><strong>Ubicación:</strong> <code>src/components/ui/PlaceholderImage.tsx</code></p>
-            <p><strong>Propósito:</strong> Muestra un placeholder visualmente agradable para imágenes.</p>
+            <h4>AnimationWrapper.tsx</h4>
+            <p><strong>Ubicación:</strong> <code>src/components/ui/AnimationWrapper.tsx</code></p>
+            <p><strong>Propósito:</strong> Anima a sus hijos para que aparezcan con un efecto de "fade-in" al hacer scroll.</p>
         </div>
+
         <!-- PROYECTO FINALIZADO -->
     </section>
 </body>
