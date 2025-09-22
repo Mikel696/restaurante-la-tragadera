@@ -23,7 +23,7 @@ const BannerCarousel = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-64 md:h-96 overflow-hidden">
+    <div className="relative w-full h-80 md:h-[500px] overflow-hidden">
       <AnimatePresence initial={false}>
         <motion.div
           key={currentIndex}

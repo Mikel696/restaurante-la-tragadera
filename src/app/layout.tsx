@@ -1,10 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Anton, Montserrat } from "next/font/google"; // Import Anton and Montserrat
 import "./globals.css";
 import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+import Footer from "@/app/components/Footer"; // New Footer path
 
-const inter = Inter({ subsets: ["latin"] });
+const anton = Anton({
+  subsets: ["latin"],
+  weight: "400", // Anton only has 400 weight
+  variable: "--font-anton", // Define CSS variable for Anton
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat", // Define CSS variable for Montserrat
+});
 
 export const metadata: Metadata = {
   title: "La Tragadera",
@@ -18,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${inter.className} flex flex-col min-h-screen bg-brand-light`}>
+      <body className={`${montserrat.variable} ${anton.variable} font-montserrat flex flex-col min-h-screen bg-brand-light`}>
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
