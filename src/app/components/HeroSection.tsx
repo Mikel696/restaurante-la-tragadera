@@ -14,10 +14,9 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 
 const heroImages = [
-  '/images/hamburguesa.jpg',
-  '/images/churrasco.jpg',
-  '/images/hotdog.jpg',
-  '/images/Picada.png',
+  '/images/banner_principal.jpg',
+  '/images/banner_promocion.jpg',
+  '/images/banner-largo-horizontal-promo.jpg',
 ];
 
 const HeroSection = () => {

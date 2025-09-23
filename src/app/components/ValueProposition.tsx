@@ -1,28 +1,40 @@
 import React from 'react';
-import { FaLeaf, FaPepperHot, FaDrumstickBite } from 'react-icons/fa'; // Example icons
+import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { GiMeat, GiChiliPepper, GiFullPizza } from 'react-icons/gi'; // Placeholder icons
 
 const ValueProposition = () => {
   return (
-    <section className="container mx-auto py-12 text-center">
-      <h2 className="text-4xl md:text-5xl font-anton text-brand-dark mb-12">
-        PERROS, HAMBURGUESAS Y PICADAS CON ESTILO
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
-          <FaLeaf className="text-brand-primary text-5xl mb-4" />
-          <h3 className="text-xl font-bold text-brand-dark mb-2">Ingredientes Frescos</h3>
-          <p className="text-gray-700">Seleccionamos solo lo mejor para tu plato.</p>
-        </div>
-        <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
-          <FaPepperHot className="text-brand-primary text-5xl mb-4" />
-          <h3 className="text-xl font-bold text-brand-dark mb-2">Salsas de la Casa</h3>
-          <p className="text-gray-700">Recetas únicas que te encantarán.</p>
-        </div>
-        <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
-          <FaDrumstickBite className="text-brand-primary text-5xl mb-4" />
-          <h3 className="text-xl font-bold text-brand-dark mb-2">Grandes Porciones</h3>
-          <p className="text-gray-700">Para que nadie se quede con hambre.</p>
-        </div>
+    <section className="container mx-auto py-12 px-4">
+      <div className="grid md:grid-cols-3 gap-8">
+        <Card className="bg-zinc-900 text-white p-6 flex flex-col items-center text-center border-none shadow-lg">
+          <GiMeat className="text-brand-primary text-5xl mb-4" />
+          <CardHeader>
+            <CardTitle className="text-2xl font-yanone mb-2">Ingredientes de Calidad</CardTitle>
+            <CardDescription className="text-gray-300 font-roboto-slab">
+              Carne 100% artesanal y productos frescos para el mejor sabor.
+            </CardDescription>
+          </CardHeader>
+        </Card>
+
+        <Card className="bg-zinc-900 text-white p-6 flex flex-col items-center text-center border-none shadow-lg">
+          <GiChiliPepper className="text-brand-primary text-5xl mb-4" />
+          <CardHeader>
+            <CardTitle className="text-2xl font-yanone mb-2">El Propio Sabor</CardTitle>
+            <CardDescription className="text-gray-300 font-roboto-slab">
+              Combinaciones únicas y salsas de la casa que no encontrarás en otro lugar.
+            </CardDescription>
+          </CardHeader>
+        </Card>
+
+        <Card className="bg-zinc-900 text-white p-6 flex flex-col items-center text-center border-none shadow-lg">
+          <GiFullPizza className="text-brand-primary text-5xl mb-4" />
+          <CardHeader>
+            <CardTitle className="text-2xl font-yanone mb-2">Combos A Lo Grande</CardTitle>
+            <CardDescription className="text-gray-300 font-roboto-slab">
+              Porciones generosas pensadas para calmar el hambre de verdad.
+            </CardDescription>
+          </CardHeader>
+        </Card>
       </div>
     </section>
   );

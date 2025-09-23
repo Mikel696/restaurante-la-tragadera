@@ -55,7 +55,9 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-roboto; /* Apply Roboto to body */
+    background-color: #1f140e; /* Tono café madera oscuro y elegante */
+    color: white; /* Aseguramos que el texto sea legible por defecto */
+    @apply font-roboto; /* Apply Roboto to body */
   }
   h1, h2 {
     @apply font-yanone; /* Apply Yanone Kaffeesatz to h1, h2 */
