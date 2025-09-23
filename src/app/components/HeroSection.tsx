@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full h-[60vh] bg-dark overflow-hidden">
+    <section className="relative w-full h-[450px] bg-dark overflow-hidden">
       <Image
         src="/images/banner-principal.jpg"
         alt="Porque el hambre no se negocia"

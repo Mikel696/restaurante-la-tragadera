@@ -9,6 +9,7 @@ const SmallFlyer = () => {
           alt="Flyer promocional"
           width={500}
           height={500}
+          objectFit="cover"
           className="rounded-lg shadow-lg"
         />
       </div>
