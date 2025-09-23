@@ -11,6 +11,7 @@ const SmallFlyer = () => {
           height={500}
           objectFit="cover"
           className="rounded-lg shadow-lg"
+          quality={80}
         />
       </div>
     </section>

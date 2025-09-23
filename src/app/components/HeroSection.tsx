@@ -15,10 +15,13 @@ const HeroSection = () => {
         objectFit="cover"
         priority // Load with high priority
       />
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center p-4">
-        <h1 className="text-brand-light text-4xl md:text-6xl font-anton text-center leading-tight mb-8 text-shadow-heavy">
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/50 flex flex-col items-center justify-center p-4">
+        <h1 className="text-brand-light text-4xl md:text-6xl font-anton text-center leading-tight mb-4 text-shadow-heavy">
           PORQUE EL HAMBRE NO SE NEGOCIA
         </h1>
+        <p className="text-brand-light text-lg md:text-xl font-montserrat text-center mb-8 text-shadow-heavy">
+          Los sabores que amas, a la puerta de tu casa.
+        </p>
         {/* CTA Button */}
         <Link href="https://wa.me/573148342452" passHref legacyBehavior>
           <Button

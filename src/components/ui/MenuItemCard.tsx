@@ -17,6 +17,8 @@ const MenuItemCard: React.FC<MenuItemCardProps> = ({ item }) => {
           layout="fill"
           objectFit="cover"
           className="transition-transform duration-300 hover:scale-110"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Example sizes, adjust as needed
+          quality={80}
         />
       </div>
       <div className="p-6 flex-grow flex flex-col">

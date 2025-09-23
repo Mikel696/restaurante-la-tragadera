@@ -45,6 +45,8 @@ const PromotionalCarousel = () => {
                       layout="fill"
                       objectFit="cover"
                       className="w-full h-auto object-cover"
+                      sizes="100vw" // Since it's a carousel item, it takes full width of its container
+                      quality={80}
                     />
                   </div>
                 </CardContent>

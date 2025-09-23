@@ -25,6 +25,8 @@ const PromotionsSection = () => {
                 layout="fill"
                 objectFit="cover"
                 className="rounded-t-md"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Example sizes, adjust as needed
+                quality={80}
               />
             </div>
             <CardHeader>

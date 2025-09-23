@@ -25,7 +25,7 @@
                     <ul>
                         <li><strong>/app:</strong> Contiene los archivos de enrutamiento, páginas y layouts de la aplicación (App Router). Cada subcarpeta representa una ruta.
                             <ul>
-                                <li><code>/ (raíz)</code>: Contiene el layout global (<code>layout.tsx</code>), la página de inicio (<code>page.tsx</code>) y los estilos globales (<code>globals.css</code>).</li>
+                                <li><code>/ (raíz)</code>: Contiene el layout global (<code>layout.tsx</code>), la página de inicio (<code>page.tsx</code>) y los estilos globales (<code>globals.css</code>). El <code>layout.tsx</code> ahora incluye metadatos SEO, integración con Google Analytics y el componente <code>FloatingWhatsAppButton</code>.</li>
                                 <li><code>/menu</code>: Página para el menú del restaurante.</li>
                                 <li><code>/contacto</code>: Página para la información de contacto.</li>
                             </ul>
@@ -78,6 +78,8 @@
             <ul>
                 <li>Utiliza <code>next/image</code> para una imagen de fondo optimizada que ocupa el 60% de la altura visible (<code>h-[60vh]</code>).</li>
                 <li>Presenta un eslogan principal con una sombra de texto (<code>text-shadow-heavy</code>) para mayor legibilidad e impacto.</li>
+                <li>Incluye un subtítulo descriptivo para mayor contexto y jerarquía tipográfica.</li>
+                <li>El fondo cuenta con un degradado sutil para añadir profundidad visual.</li>
                 <li>Incluye un botón de llamado a la acción para pedir por WhatsApp.</li>
             </ul>
         </div>
@@ -116,7 +118,7 @@
             </ul>
             <p><strong>Funcionalidades:</strong></p>
             <ul>
-                <li>Muestra la imagen del producto utilizando <code>next/image</code>.</li>
+                <li>Muestra la imagen del producto utilizando <code>next/image</code>, con optimización de <code>sizes</code> y <code>quality</code>.</li>
                 <li>Incluye un botón de "Añadir" (actualmente sin funcionalidad).</li>
                 <li>Tiene un efecto de zoom en la imagen al pasar el cursor.</li>
             </ul>
@@ -169,7 +171,7 @@
             <p><strong>Funcionalidades:</strong></p>
             <ul>
                 <li>Obtiene los datos de las promociones desde <code>src/lib/data.ts</code>.</li>
-                <li>Renderiza cada promoción como una tarjeta con imagen, título y descripción.</li>
+                <li>Renderiza cada promoción como una tarjeta con imagen, título y descripción, con optimización de <code>sizes</code> y <code>quality</code> para las imágenes.</li>
                 <li>Incluye un ID <code>#promos</code> para la navegación por scroll.</li>
             </ul>
         </div>
@@ -193,7 +195,7 @@
             <ul>
                 <li>Utiliza el componente <code>Carousel</code> de Shadcn/UI.</li>
                 <li>Incluye el plugin <code>Autoplay</code> para rotar las imágenes cada 5 segundos.</li>
-                <li>Muestra las imágenes <code>banner-largo-horizontal-promo.jpg</code> y <code>banner-promocion.jpg</code>.</li>
+                <li>Muestra las imágenes <code>banner-largo-horizontal-promo.jpg</code> y <code>banner-promocion.jpg</code>, con optimización de <code>sizes</code> y <code>quality</code>.</li>
                 <li>Es responsivo y se adapta al ancho del contenedor.</li>
             </ul>
         </div>
@@ -204,8 +206,21 @@
             <p><strong>Propósito:</strong> Muestra una imagen estática (flyer) para añadir interés visual y comunicar promociones o eventos específicos.</p>
             <p><strong>Funcionalidades:</strong></p>
             <ul>
-                <li>Utiliza el componente <code>Image</code> de Next.js para mostrar <code>/images/banner-rotativo.jpg</code>.</li>
+                <li>Utiliza el componente <code>Image</code> de Next.js para mostrar <code>/images/banner-rotativo.jpg</code>, con optimización de <code>quality</code>.</li>
                 <li>Está centrado y tiene un margen vertical para separarlo de otras secciones.</li>
+            </ul>
+        </div>
+        <div class="component">
+            <h4>FloatingWhatsAppButton.tsx</h4>
+            <p><strong>Ubicación:</strong> <code>src/components/ui/FloatingWhatsAppButton.tsx</code></p>
+            <p><strong>Propósito:</strong> Botón flotante e interactivo para contactar vía WhatsApp.</p>
+            <p><strong>Funcionalidades:</strong></p>
+            <ul>
+                <li>Es un Componente de Cliente ('use client') para manejar la visibilidad y el mensaje.</li>
+                <li>Aparece después de un retardo y muestra un mensaje emergente temporal.</li>
+                <li>Se posiciona de forma fija en la esquina inferior derecha de la pantalla.</li>
+                <li>Utiliza un icono de WhatsApp de <code>react-icons</code>.</li>
+                <li>Enlaza directamente al chat de WhatsApp del negocio.</li>
             </ul>
         </div>
         <!-- PROYECTO FINALIZADO -->
