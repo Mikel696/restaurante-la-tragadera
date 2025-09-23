@@ -34,28 +34,28 @@ const Header = () => {
           <NavigationMenu>
             <NavigationMenuList className="flex space-x-2">
               <NavigationMenuItem>
-                <Link href="/" legacyBehavior passHref>
+                <Link href="#/" legacyBehavior passHref>
                   <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors px-3 py-2 rounded-md">
                     Inicio
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/menu" legacyBehavior passHref>
+                <Link href="#menu" legacyBehavior passHref>
                   <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors px-3 py-2 rounded-md">
                     Menú
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/promos" legacyBehavior passHref>
+                <Link href="#promos" legacyBehavior passHref>
                   <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors px-3 py-2 rounded-md">
                     Promos
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/contacto" legacyBehavior passHref>
+                <Link href="#contacto" legacyBehavior passHref>
                   <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors px-3 py-2 rounded-md">
                     Contacto
                   </NavigationMenuLink>
@@ -86,28 +86,28 @@ const Header = () => {
           <NavigationMenu className="w-full"> {/* Ensure NavigationMenu takes full width in mobile */}
             <NavigationMenuList className="flex flex-col px-6 pt-2 pb-4 space-y-2">
               <NavigationMenuItem>
-                <Link href="/" legacyBehavior passHref>
+                <Link href="#/" legacyBehavior passHref>
                   <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors block py-2 px-3 rounded-md w-full text-left">
                     Inicio
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/menu" legacyBehavior passHref>
+                <Link href="#menu" legacyBehavior passHref>
                   <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors block py-2 px-3 rounded-md w-full text-left">
                     Menú
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/promos" legacyBehavior passHref>
+                <Link href="#promos" legacyBehavior passHref>
                   <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors block py-2 px-3 rounded-md w-full text-left">
                     Promos
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/contacto" legacyBehavior passHref>
+                <Link href="#contacto" legacyBehavior passHref>
                   <NavigationMenuLink className="text-gray-300 hover:text-brand-yellow transition-colors block py-2 px-3 rounded-md w-full text-left">
                     Contacto
                   </NavigationMenuLink>

@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 
 const MenuSection = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section id="menu" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {menuItems.map((item) => (
         <Card key={item.id} className="flex flex-col h-full">
           <CardHeader>
@@ -37,7 +37,7 @@ const MenuSection = () => {
           </CardFooter>
         </Card>
       ))}
-    </div>
+    </section>
   );
 };
 

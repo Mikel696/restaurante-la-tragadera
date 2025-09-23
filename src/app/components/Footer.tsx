@@ -6,7 +6,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-dark text-light py-8">
+    <footer id="contacto" className="bg-dark text-light py-8">
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
         {/* Subsección 1: Contacto y Dirección */}
         <div className="text-center md:text-left">
