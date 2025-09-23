@@ -73,14 +73,27 @@
         <div class="component">
             <h4>HeroSection.tsx</h4>
             <p><strong>Ubicación:</strong> <code>src/app/components/HeroSection.tsx</code></p>
-            <p><strong>Propósito:</strong> Componente principal de la página de inicio que muestra una imagen de fondo impactante y un llamado a la acción.</p>
+            <p><strong>Propósito:</strong> Componente principal de la página de inicio que ahora funciona como un carrusel dinámico y automático, mostrando imágenes impactantes y un llamado a la acción.</p>
             <p><strong>Funcionalidades:</strong></p>
             <ul>
-                <li>Utiliza <code>next/image</code> para una imagen de fondo optimizada que ocupa el 60% de la altura visible (<code>h-[60vh]</code>).</li>
+                <li>Utiliza el componente <code>Carousel</code> de Shadcn/UI para rotar automáticamente entre <code>banner-principal.jpg</code>, <code>banner-promocion.jpg</code> y <code>banner-largo-horizontal-promo.jpg</code> cada 5 segundos.</li>
+                <li>Mantiene el logo de "La Tragadera" y el botón de "PIDE AHORA" superpuestos al carrusel.</li>
                 <li>Presenta un eslogan principal con una sombra de texto (<code>text-shadow-heavy</code>) para mayor legibilidad e impacto.</li>
                 <li>Incluye un subtítulo descriptivo para mayor contexto y jerarquía tipográfica.</li>
                 <li>El fondo cuenta con un degradado sutil para añadir profundidad visual.</li>
                 <li>Incluye un botón de llamado a la acción para pedir por WhatsApp.</li>
+            </ul>
+        </div>
+
+        <div class="component">
+            <h4>ValueProposition.tsx</h4>
+            <p><strong>Ubicación:</strong> <code>src/app/components/ValueProposition.tsx</code></p>
+            <p><strong>Propósito:</strong> Destaca los puntos fuertes y la propuesta de valor del negocio mediante una cuadrícula de tarjetas con íconos, títulos y descripciones breves.</p>
+            <p><strong>Funcionalidades:</strong></p>
+            <ul>
+                <li>Presenta una cuadrícula de 3 columnas responsiva.</li>
+                <li>Cada columna es una <code>Card</code> de Shadcn/UI con un ícono (ej. de <code>react-icons</code>), un título y una descripción.</li>
+                <li>Ejemplos de propuestas de valor: "Ingredientes de Calidad", "El Propio Sabor", "Combos A Lo Grande".</li>
             </ul>
         </div>
 
@@ -190,31 +203,7 @@
                 <li>Tiene un fondo de color de acento (amarillo) para destacar.</li>
             </ul>
         </div>
-        <div class="component">
-            <h4>PromotionalCarousel.tsx</h4>
-            <p><strong>Ubicación:</strong> <code>src/app/components/PromotionalCarousel.tsx</code></p>
-            <p><strong>Propósito:</strong> Muestra un carrusel dinámico y automático con banners de promociones.</p>
-            <p><strong>Funcionalidades:</strong></p>
-            <ul>
-                <li>Utiliza el componente <code>Carousel</code> de Shadcn/UI.</li>
-                <li>Incluye el plugin <code>Autoplay</code> para rotar las imágenes cada 5 segundos.</li>
-                <li>Muestra las imágenes <code>banner-largo-horizontal-promo.jpg</code> y <code>banner-promocion.jpg</code>, con optimización de <code>sizes</code> y <code>quality</code>.</li>
-                <li>Se añadió <code>min-h-0</code> al contenedor de la imagen para asegurar su correcta visualización.</li>
-                <li>Es responsivo y se adapta al ancho del contenedor.</li>
-            </ul>
-        </div>
-
-        <div class="component">
-            <h4>SmallFlyer.tsx</h4>
-            <p><strong>Ubicación:</strong> <code>src/app/components/SmallFlyer.tsx</code></p>
-            <p><strong>Propósito:</strong> Muestra una imagen estática (flyer) para añadir interés visual y comunicar promociones o eventos específicos.</p>
-            <p><strong>Funcionalidades:</strong></p>
-            <ul>
-                <li>Utiliza el componente <code>Image</code> de Next.js para mostrar <code>/images/banner-rotativo.jpg</code>, con optimización de <code>quality</code>.</li>
-                <li>Se añadió <code>min-h-0</code> al contenedor de la imagen para asegurar su correcta visualización.</li>
-                <li>Está centrado y tiene un margen vertical para separarlo de otras secciones.</li>
-            </ul>
-        </div>
+        
         <div class="component">
             <h4>FloatingWhatsAppButton.tsx</h4>
             <p><strong>Ubicación:</strong> <code>src/components/ui/FloatingWhatsAppButton.tsx</code></p>
