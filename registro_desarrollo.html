@@ -420,6 +420,22 @@
         <li><code>registro_desarrollo.html</code></li>
     </ul>
 </div>
+<div class="entry">
+    <h3>Reversión de Configuración de Webpack en next.config.mjs</h3>
+    <p><strong>Fecha:</strong> 22 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se revirtió el archivo <code>next.config.mjs</code> a su estado original (objeto vacío <code>{}</code>).</li>
+        <li>Se eliminó la configuración explícita de Webpack para la resolución de alias que se había añadido previamente.</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>A pesar de que la configuración explícita de Webpack para alias funcionaba localmente, el error de "Module not found" persistía en el entorno de Vercel. Esta reversión busca eliminar cualquier posible interferencia de la configuración personalizada de Webpack con el proceso de compilación de Vercel, confiando en la configuración estándar de <code>tsconfig.json</code> para la resolución de alias.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>next.config.mjs</code></li>
+        <li><code>registro_desarrollo.html</code></li>
+    </ul>
+</div>
 <!-- PROYECTO FINALIZADO -->
 </body>
 </html>
