@@ -375,6 +375,33 @@
         <li><code>registro_desarrollo.html</code></li>
     </ul>
 </div>
+<div class="entry">
+    <h3>Paso 19: Depuración y Reescritura de Componentes Shadcn/UI</h3>
+    <p><strong>Fecha:</strong> 22 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se realizó una depuración exhaustiva para resolver el error persistente <code>React.Children.only expected to receive a single React element child.</code> y las advertencias de inconsistencia de mayúsculas/minúsculas.</li>
+        <li>Se eliminó y reescribió el componente <code>Header.tsx</code> (Navbar) desde cero, asegurando la correcta implementación de <code>NavigationMenu</code> y <code>Button</code> de Shadcn/UI, prestando especial atención a las reglas de anidación y el uso de <code>asChild</code> con <code>next/link</code>.</li>
+        <li>Se creó y reescribió el componente <code>MenuSection.tsx</code> en <code>src/app/components/</code>, moviendo la lógica de renderizado del menú desde <code>src/app/menu/page.tsx</code>. Se aseguró que la implementación de <code>Card</code> de Shadcn/UI para cada elemento del menú cumpliera con las expectativas de un solo hijo.</li>
+        <li>Se realizó una limpieza agresiva del entorno de desarrollo, incluyendo la eliminación y reinstalación de <code>node_modules</code>, <code>package-lock.json</code>, <code>.next</code>, y la recreación de la carpeta <code>src/components/ui</code> para resolver problemas de caché y consistencia de archivos.</li>
+        <li>Se verificó que todas las importaciones de componentes Shadcn/UI utilizaran la convención de minúsculas (`@/components/ui/button`).</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>Para resolver los errores críticos de compilación que impedían el despliegue del proyecto y asegurar que la integración de Shadcn/UI fuera robusta, profesional y conforme a las mejores prácticas, garantizando la estabilidad del entorno de desarrollo.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>src/components/layout/Header.tsx</code> (reescrito)</li>
+        <li><code>src/app/components/MenuSection.tsx</code> (creado)</li>
+        <li><code>src/app/menu/page.tsx</code></li>
+        <li><code>src/app/page.tsx</code></li>
+        <li><code>src/app/contacto/page.tsx</code></li>
+        <li><code>src/components/ui/AnimationWrapper.tsx</code> (recreado)</li>
+        <li><code>src/components/ui/ContactForm.tsx</code> (recreado)</li>
+        <li><code>src/components/ui/MenuItemCard.tsx</code> (recreado)</li>
+        <li><code>src/lib/utils.ts</code> (creado)</li>
+        <li><code>registro_desarrollo.html</code></li>
+    </ul>
+</div>
 <!-- PROYECTO FINALIZADO -->
 </body>
 </html>
