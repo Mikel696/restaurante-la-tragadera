@@ -14,6 +14,7 @@ import Autoplay from 'embla-carousel-autoplay';
 const promotionalImages = [
   '/images/banner-largo-horizontal-promo.jpg',
   '/images/banner-promocion.jpg',
+  '/images/banner-rotativo2.jpg',
 ];
 
 const PromotionalCarousel = () => {
