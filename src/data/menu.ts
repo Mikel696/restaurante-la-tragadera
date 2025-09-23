@@ -40,13 +40,13 @@ export const menuItems: MenuItem[] = [
     name: 'Atisbe (Picada)',
     description: 'Variedad de carnes y embutidos, papas y salsas para compartir.',
     price: '41.700',
-    image: '/images/picada.jpg', // Local image path
+    image: '/images/Picada.png', // Local image path
   },
   {
     id: 6,
     name: 'Alitas BBQ',
     description: 'Crujientes alitas de pollo bañadas en nuestra salsa BBQ casera.',
     price: '25.000', // Assuming a price, as it wasn't provided
-    image: '/images/alitas.jpg', // Local image path
+    image: '/images/combo-alitas.png', // Local image path
   },
 ];

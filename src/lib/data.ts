@@ -26,7 +26,7 @@ export const promociones = [
     titulo: 'COMBO 3',
     descripcion: 'Picada personal con carne, pollo, papa criolla y chorizo.',
     precio: '$28.900',
-    imagenUrl: '/images/salchipapa.png'
+    imagenUrl: '/images/picada-combo.jpg'
   },
   {
     id: 4,
