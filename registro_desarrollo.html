@@ -402,6 +402,24 @@
         <li><code>registro_desarrollo.html</code></li>
     </ul>
 </div>
+<div class="entry">
+    <h3>Corrección de Error Crítico de Despliegue en Vercel</h3>
+    <p><strong>Fecha:</strong> 22 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se identificó un error de compilación en Vercel relacionado con la resolución de módulos para los alias de ruta (e.g., <code>@/components/ui/button</code>).</li>
+        <li>Se modificó <code>next.config.mjs</code> para incluir una configuración explícita de Webpack que resuelve el alias <code>@</code> a la carpeta <code>./src</code>.</li>
+        <li>Se ajustó la sintaxis de <code>next.config.mjs</code> para ser compatible con módulos ES, utilizando <code>import path from 'path'</code> y definiendo <code>__dirname</code> con <code>import.meta.url</code>.</li>
+        <li>Se verificó la compilación localmente con <code>npm run build</code>, la cual se completó exitosamente.</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>Para resolver el error de "Module not found" que impedía el despliegue exitoso del proyecto en Vercel, asegurando que el sistema de compilación de Next.js reconozca y resuelva correctamente los alias de ruta definidos en <code>tsconfig.json</code>.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>next.config.mjs</code></li>
+        <li><code>registro_desarrollo.html</code></li>
+    </ul>
+</div>
 <!-- PROYECTO FINALIZADO -->
 </body>
 </html>
