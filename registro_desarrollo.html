@@ -558,35 +558,6 @@
         <li><code>registro_desarrollo.html</code></li>
         <li><code>descripcion_proyecto.html</code></li>
     </ul>
-</div>
-    <h3>Paso 13: Refinamiento Maestro de Diseño y Funcionalidad</h3>
-    <p><strong>Fecha:</strong> 23 de septiembre de 2025</p>
-    <p><strong>Qué se hizo:</strong></p>
-    <ul>
-        <li>Se ajustó el banner principal (<code>HeroSection</code>) a una altura de <code>60vh</code> para mejorar la visibilidad del contenido inferior al cargar la página.</li>
-        <li>Se añadió una sombra de texto (<code>text-shadow-heavy</code>) al eslogan principal para mayor impacto visual.</li>
-        <li>Se corrigieron las rutas de imágenes en <code>src/data/menu.ts</code> y <code>src/lib/data.ts</code> para usar las imágenes correctas y actualizadas de los productos y combos.</li>
-        <li>Se instaló y configuró el componente <code>Carousel</code> de Shadcn/UI.</li>
-        <li>Se creó el componente <code>PromotionalCarousel.tsx</code> para mostrar banners promocionales de forma dinámica y con auto-rotación.</li>
-        <li>Se creó el componente <code>SmallFlyer.tsx</code> para añadir un elemento visual estático adicional.</li>
-        <li>Se integraron los nuevos componentes <code>PromotionalCarousel</code> y <code>SmallFlyer</code> en la página de inicio (<code>page.tsx</code>).</li>
-    </ul>
-    <p><strong>Por qué se hizo:</strong></p>
-    <p>Para elevar el diseño de la página a un nivel profesional y pulido, respondiendo al feedback del usuario. Los ajustes mejoran la jerarquía visual y la experiencia de usuario, mientras que los nuevos componentes dinámicos añaden interés y profesionalismo al diseño.</p>
-    <p><strong>Archivos modificados/creados:</strong></p>
-    <ul>
-        <li><code>src/app/globals.css</code></li>
-        <li><code>src/app/components/HeroSection.tsx</code></li>
-        <li><code>src/data/menu.ts</code></li>
-        <li><code>src/lib/data.ts</code></li>
-        <li><code>src/components/ui/carousel.tsx</code> (creado)</li>
-        <li><code>src/app/components/PromotionalCarousel.tsx</code> (creado)</li>
-        <li><code>src/app/components/SmallFlyer.tsx</code> (creado)</li>
-        <li><code>src/app/page.tsx</code></li>
-        <li><code>registro_desarrollo.html</code></li>
-        <li><code>descripcion_proyecto.html</code></li>
-    </ul>
-</div>
 <div class="entry">
     <h3>Paso 14: Mejoras de Diseño, Optimización y Funcionalidad</h3>
     <p><strong>Fecha:</strong> 23 de septiembre de 2025</p>
@@ -610,6 +581,26 @@
         <li><code>src/app/components/PromotionalCarousel.tsx</code></li>
         <li><code>src/app/components/SmallFlyer.tsx</code></li>
         <li><code>src/components/ui/FloatingWhatsAppButton.tsx</code> (creado)</li>
+        <li><code>registro_desarrollo.html</code></li>
+        <li><code>descripcion_proyecto.html</code></li>
+    </ul>
+</div>
+<div class="entry">
+    <h3>Paso 15: Solución de Problemas de Visibilidad de Imágenes y Mejora de Descripciones</h3>
+    <p><strong>Fecha:</strong> 23 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se investigaron los problemas de visibilidad de imágenes en <code>HeroSection.tsx</code>, <code>SmallFlyer.tsx</code>, y <code>PromotionsSection.tsx</code>. Se confirmó la existencia de los archivos de imagen en <code>public/images</code> y la configuración básica de <code>next.config.mjs</code>.</li>
+        <li>Se añadió la clase <code>min-h-0</code> a los contenedores de imagen en <code>src/app/components/PromotionsSection.tsx</code> y <code>src/app/components/PromotionalCarousel.tsx</code> para asegurar que las imágenes se rendericen correctamente dentro de sus contenedores.</li>
+        <li>Se mejoró el diseño de las descripciones de los productos en <code>src/components/ui/MenuItemCard.tsx</code> y <code>src/app/components/PromotionsSection.tsx</code>, ajustando el color del texto a <code>text-gray-700</code> y el tamaño de fuente a <code>text-base</code> para mayor legibilidad y distinción.</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>Para resolver los problemas reportados de imágenes no visibles y para mejorar la presentación visual de las descripciones de los productos, haciendo el contenido más claro y atractivo para el usuario.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>src/components/ui/MenuItemCard.tsx</code></li>
+        <li><code>src/app/components/PromotionsSection.tsx</code></li>
+        <li><code>src/app/components/PromotionalCarousel.tsx</code></li>
         <li><code>registro_desarrollo.html</code></li>
         <li><code>descripcion_proyecto.html</code></li>
     </ul>

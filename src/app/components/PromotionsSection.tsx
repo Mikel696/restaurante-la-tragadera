@@ -18,7 +18,7 @@ const PromotionsSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {promociones.map((promo) => (
           <Card key={promo.id} className="flex flex-col h-full overflow-hidden">
-            <div className="relative h-48 w-full">
+            <div className="relative h-48 w-full min-h-0">
               <Image
                 src={promo.imagenUrl}
                 alt={promo.titulo}
@@ -31,7 +31,7 @@ const PromotionsSection = () => {
             </div>
             <CardHeader>
               <CardTitle className="text-2xl font-bold text-brand-dark">{promo.titulo}</CardTitle>
-              <CardDescription className="text-gray-600">{promo.descripcion}</CardDescription>
+              <CardDescription className="text-gray-700 text-base">{promo.descripcion}</CardDescription>
             </CardHeader>
             <CardContent className="flex-grow"></CardContent>
             <CardFooter className="flex justify-end items-center mt-4">

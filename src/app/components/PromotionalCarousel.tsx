@@ -38,7 +38,7 @@ const PromotionalCarousel = () => {
             <CarouselItem key={index}>
               <Card className="overflow-hidden">
                 <CardContent className="p-0">
-                  <div className="relative w-full h-64">
+                  <div className="relative w-full h-64 min-h-0">
                     <Image
                       src={src}
                       alt={`Promoción ${index + 1}`}
