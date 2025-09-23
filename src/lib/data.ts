@@ -1,20 +1,38 @@
+export const menuCategories = [
+  { id: 1, name: 'Hamburguesas', imageUrl: '/images/hamburguesa.jpg' },
+  { id: 2, name: 'Alitas', imageUrl: '/images/alitas.jpg' },
+  { id: 3, name: 'Picadas', imageUrl: '/images/picada.jpg' },
+  { id: 4, name: 'Costillas', imageUrl: '/images/churrasco.jpg' }, // Using churrasco as a placeholder for ribs
+  { id: 5, name: 'Perros Calientes', imageUrl: '/images/hotdog.jpg' },
+];
+
 export const promociones = [
   {
     id: 1,
-    titulo: 'COMBO PARA DOS',
-    descripcion: '2 Hamburguesas, papas grandes y 2 gaseosas. ¡Perfecto para compartir!',
-    imagenUrl: '/images/promos/combo-pareja.jpg'
+    titulo: 'COMBO 1',
+    descripcion: 'Hamburguesa con 100g de carne de res, 4 piezas de ala, porción de papas.',
+    precio: '$23.900',
+    imagenUrl: '/images/combos/combo1.jpg'
   },
   {
     id: 2,
-    titulo: 'MARTES DE ALITAS',
-    descripcion: 'Disfruta de nuestras deliciosas alitas con la salsa de tu elección. ¡Solo los martes!',
-    imagenUrl: '/images/promos/alitas-martes.jpg'
+    titulo: 'COMBO 2',
+    descripcion: 'Perro caliente con salchicha Zenú, 4 piezas de ala, porción de papas.',
+    precio: '$23.900',
+    imagenUrl: '/images/combos/combo2.jpg'
   },
   {
     id: 3,
-    titulo: 'COMBO FAMILIAR',
-    descripcion: '4 Hamburguesas, 2 papas grandes y 4 gaseosas. ¡Ideal para toda la familia!',
-    imagenUrl: '/images/promos/combo-familiar.jpg'
+    titulo: 'COMBO 3',
+    descripcion: 'Picada personal con carne, pollo, papa criolla y chorizo.',
+    precio: '$28.900',
+    imagenUrl: '/images/combos/combo3.jpg'
+  },
+  {
+    id: 4,
+    titulo: 'COMBO 4',
+    descripcion: 'Costillas BBQ con papas a la francesa y ensalada.',
+    precio: '$35.900',
+    imagenUrl: '/images/combos/combo4.jpg'
   }
 ];

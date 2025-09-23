@@ -31,6 +31,9 @@ const PromotionsSection = () => {
               <CardDescription className="text-gray-600">{promo.descripcion}</CardDescription>
             </CardHeader>
             <CardContent className="flex-grow"></CardContent>
+            <CardFooter className="flex justify-end items-center mt-4">
+              <span className="text-2xl font-bold text-brand-primary">{promo.precio}</span>
+            </CardFooter>
           </Card>
         ))}
       </div>
