@@ -494,6 +494,42 @@
         <li><code>src/app/globals.css</code></li>
     </ul>
 </div>
+<div class="entry">
+    <h3>Paso 12: Integración de Contenido Maestro y Refinamiento Final</h3>
+    <p><strong>Fecha:</strong> 23 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se sincronizaron todas las imágenes locales en <code>public/images</code> con el repositorio de GitHub para corregir el error de build.</li>
+        <li>Se refactorizó <code>src/app/components/HeroSection.tsx</code> para usar una imagen de marketing impactante como fondo y un eslogan principal.</li>
+        <li>Se actualizó <code>src/lib/data.ts</code> con el menú real, incluyendo nuevas categorías (<code>menuCategories</code>) y combos reales con precios en el array <code>promociones</code>.</li>
+        <li>Se mejoró el componente <code>src/app/components/PromotionsSection.tsx</code> para mostrar el precio de los combos de forma destacada.</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>Para corregir el error crítico de despliegue causado por la falta de sincronización de assets y para integrar el contenido real del menú y las promociones, dando a la página un aspecto final y profesional.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>public/images/*</code> (añadidos)</li>
+        <li><code>src/app/components/HeroSection.tsx</code></li>
+        <li><code>src/lib/data.ts</code></li>
+        <li><code>src/app/components/PromotionsSection.tsx</code></li>
+    </ul>
+</div>
+<div class="entry">
+    <h3>Paso 13: Corrección de Rutas de Imágenes en Promociones</h3>
+    <p><strong>Fecha:</strong> 23 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se identificó y corrigió un error crítico en <code>src/lib/data.ts</code> donde las imágenes de las promociones apuntaban a un directorio inexistente (<code>/images/combos/</code>).</li>
+        <li>Se actualizaron las rutas para que apunten a imágenes de productos existentes y relevantes en <code>/public/images</code>, asegurando que la sección de promociones se renderice correctamente.</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>Para solucionar un bug que impedía la visualización de las imágenes de las promociones, completando así la "Integración de Contenido Maestro" y asegurando que todos los componentes de la página de inicio sean funcionales y visualmente correctos.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>src/lib/data.ts</code></li>
+        <li><code>registro_desarrollo.html</code></li>
+    </ul>
+</div>
 <!-- PROYECTO FINALIZADO -->
 </body>
 </html>
