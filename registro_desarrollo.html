@@ -451,6 +451,22 @@
         <li><code>registro_desarrollo.html</code></li>
     </ul>
 </div>
+<div class="entry">
+    <h3>Corrección de Error de Build por Rutas Relativas</h3>
+    <p><strong>Fecha:</strong> 22 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se modificaron las rutas de importación de los componentes de Shadcn/UI en <code>src/app/components/MenuSection.tsx</code> y <code>src/components/layout/Header.tsx</code> para utilizar rutas relativas en lugar de alias (<code>@/components/...</code>).</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>A pesar de que los archivos de componentes estaban presentes en el repositorio, las carpetas estaban en minúsculas y <code>tsconfig.json</code> configuraba correctamente los alias, el error de "Module not found" persistía en Vercel. Se determinó que la forma más robusta de resolver este problema de resolución de módulos en el entorno de Vercel era utilizar rutas relativas directas, eliminando cualquier posible inconsistencia en la interpretación de los alias.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>src/app/components/MenuSection.tsx</code></li>
+        <li><code>src/components/layout/Header.tsx</code></li>
+        <li><code>registro_desarrollo.html</code></li>
+    </ul>
+</div>
 <!-- PROYECTO FINALIZADO -->
 </body>
 </html>
