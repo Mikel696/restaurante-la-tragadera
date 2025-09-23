@@ -18,29 +18,22 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "La Tragadera - El mejor restaurante de comidas rápidas",
-  description: "La Tragadera te ofrece los mejores perros calientes, hamburguesas y combos con estilo. ¡Pide a domicilio en Bogotá!",
+  title: 'La Tragadera - Hamburguesas, Picadas y Alitas en Soacha',
+  description: 'El propio sabor, ¡a lo grande! Pide a domicilio las mejores hamburguesas, alitas, picadas y combos de Soacha. ¡Porque el hambre no se negocia!',
   openGraph: {
-    title: "La Tragadera - Perros Calientes y Hamburguesas con Estilo",
-    description: "La Tragadera te ofrece los mejores perros calientes, hamburguesas y combos con estilo. ¡Pide a domicilio en Bogotá!",
-    url: "https://www.latragadera.com.co", // Placeholder URL
-    siteName: "La Tragadera",
+    title: 'La Tragadera - ¡El Propio Sabor!',
+    description: 'Las mejores comidas rápidas de Soacha, directamente a tu casa.',
+    url: 'https://restaurante-la-tragadera.vercel.app/',
+    siteName: 'La Tragadera',
     images: [
       {
-        url: "https://www.latragadera.com.co/images/banner_principal.jpg", // Placeholder image
+        url: '/images/banner-promocion.jpg', // Imagen principal para compartir
         width: 1200,
         height: 630,
-        alt: "La Tragadera - Comida Rápida con Estilo",
       },
     ],
-    locale: "es_ES",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "La Tragadera - Perros Calientes y Hamburguesas con Estilo",
-    description: "La Tragadera te ofrece los mejores perros calientes, hamburguesas y combos con estilo. ¡Pide a domicilio en Bogotá!",
-    images: ["https://www.latragadera.com.co/images/banner_principal.jpg"], // Placeholder image
+    locale: 'es_CO',
+    type: 'website',
   },
 };
 
