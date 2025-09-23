@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa'; // Import icons
 
 const Footer = () => {
@@ -28,6 +29,20 @@ const Footer = () => {
             <Link href="https://wa.me/573148342452" target="_blank" rel="noopener noreferrer" className="text-light hover:text-primary transition-colors">
               <FaWhatsapp size={24} />
             </Link>
+          </div>
+        </div>
+
+        {/* Subsección 4: Formas de Pago */}
+        <div className="text-center">
+          <h3 className="text-primary text-xl font-bold mb-2">Formas de Pago</h3>
+          <div className="relative w-48 h-auto">
+            <Image
+              src="/images/formas-de-pago.jpg"
+              alt="Formas de pago"
+              width={192}
+              height={80}
+              className="rounded-md"
+            />
           </div>
         </div>
 
