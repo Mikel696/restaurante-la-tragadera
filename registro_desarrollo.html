@@ -436,6 +436,21 @@
         <li><code>registro_desarrollo.html</code></li>
     </ul>
 </div>
+<div class="entry">
+    <h3>Configuración Explícita de baseUrl en tsconfig.json</h3>
+    <p><strong>Fecha:</strong> 22 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se añadió explícitamente la propiedad <code>"baseUrl": "."</code> dentro de <code>compilerOptions</code> en <code>tsconfig.json</code>.</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>A pesar de que los archivos de componentes de Shadcn/UI están presentes en el repositorio y <code>tsconfig.json</code> ya configuraba los alias de ruta, el error de "Module not found" persistía en Vercel. Esta modificación busca asegurar que el entorno de compilación de Vercel interprete correctamente las rutas relativas y los alias, resolviendo así el problema de importación.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>tsconfig.json</code></li>
+        <li><code>registro_desarrollo.html</code></li>
+    </ul>
+</div>
 <!-- PROYECTO FINALIZADO -->
 </body>
 </html>
