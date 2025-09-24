@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Logo = () => {
   return (
-    <div className="mx-auto w-full max-w-md">
+    <div className="mx-auto w-full">
       <Image
         src="/images/banner_principal.png" // Ruta directa y explícita
         alt="Logo de La Tragadera Fast Food"

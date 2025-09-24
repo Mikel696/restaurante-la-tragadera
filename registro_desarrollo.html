@@ -628,6 +628,26 @@
         <li><code>descripcion_proyecto.html</code></li>
     </ul>
 </div>
+<div class="entry">
+    <h3>Paso 15: Rediseño Maestro de Identidad Visual</h3>
+    <p><strong>Fecha:</strong> 23 de septiembre de 2025</p>
+    <p><strong>Qué se hizo:</strong></p>
+    <ul>
+        <li>Se implementó un fondo de textura de madera oscura en <code>src/app/globals.css</code> para toda la página, utilizando <code>background-image: url('/images/textures/dark-wood.png')</code>, <code>background-size: cover</code> y <code>background-attachment: fixed</code>.</li>
+        <li>Se creó el directorio <code>public/images/textures/</code> y se añadió un archivo placeholder <code>dark-wood.png</code>.</li>
+        <li>Se creó el componente <code>src/components/ui/Logo.tsx</code> para aislar y gestionar la visualización del logo <code>banner_principal.png</code>.</li>
+        <li>Se rediseñó <code>src/app/components/HeroSection.tsx</code> para ser un contenedor elegante que muestra el nuevo componente <code>Logo</code> y un llamado a la acción, eliminando el carrusel anterior.</li>
+    </ul>
+    <p><strong>Por qué se hizo:</strong></p>
+    <p>Para ejecutar un rediseño maestro de la identidad visual del sitio, estableciendo un fondo coherente con la marca y solucionando de forma definitiva el problema de visualización del banner principal mediante la creación de un componente de logo dedicado. Esto eleva el diseño general a un nivel profesional y memorable.</p>
+    <p><strong>Archivos modificados/creados:</strong></p>
+    <ul>
+        <li><code>src/app/globals.css</code></li>
+        <li><code>public/images/textures/dark-wood.png</code> (creado)</li>
+        <li><code>src/components/ui/Logo.tsx</code> (creado)</li>
+        <li><code>src/app/components/HeroSection.tsx</code></li>
+    </ul>
+</div>
 <!-- PROYECTO FINALIZADO -->
 </body>
 </html>

@@ -25,7 +25,7 @@
                     <ul>
                         <li><strong>/app:</strong> Contiene los archivos de enrutamiento, páginas y layouts de la aplicación (App Router). Cada subcarpeta representa una ruta.
                             <ul>
-                                <li><code>/ (raíz)</code>: Contiene el layout global (<code>layout.tsx</code>), la página de inicio (<code>page.tsx</code>) y los estilos globales (<code>globals.css</code>). El <code>layout.tsx</code> ahora incluye metadatos SEO, integración con Google Analytics y el componente <code>FloatingWhatsAppButton</code>.</li>
+                                <li><code>/ (raíz)</code>: Contiene el layout global (<code>layout.tsx</code>), la página de inicio (<code>page.tsx</code>) y los estilos globales (<code>globals.css</code>). El <code>layout.tsx</code> ahora incluye metadatos SEO, integración con Google Analytics y el componente <code>FloatingWhatsAppButton</code>. El <code>body</code> de la página ahora tiene un fondo de textura de madera oscura (<code>background-image: url('/images/textures/dark-wood.png')</code>) para una identidad visual más fuerte.</li>
                                 <li><code>/menu</code>: Página para el menú del restaurante.</li>
                                 <li><code>/contacto</code>: Página para la información de contacto.</li>
                             </ul>
@@ -71,16 +71,37 @@
         </div>
 
         <div class="component">
-            <h4>HeroSection.tsx</h4>
-            <p><strong>Ubicación:</strong> <code>src/app/components/HeroSection.tsx</code></p>
-            <p><strong>Propósito:</strong> Componente principal de la página de inicio que ahora funciona como un carrusel dinámico y automático, mostrando imágenes impactantes y un llamado a la acción.</p>
+            <h4>Logo.tsx</h4>
+            <p><strong>Ubicación:</strong> <code>src/components/ui/Logo.tsx</code></p>
+            <p><strong>Propósito:</strong> Componente dedicado para mostrar el logo principal del restaurante (<code>banner_principal.png</code>), asegurando su correcta visualización y optimización.</p>
             <p><strong>Funcionalidades:</strong></p>
             <ul>
-                <li>Utiliza el componente <code>Carousel</code> de Shadcn/UI para rotar automáticamente entre <code>banner-principal.jpg</code>, <code>banner-promocion.jpg</code> y <code>banner-largo-horizontal-promo.jpg</code> cada 5 segundos.</li>
-                <li>Mantiene el logo de "La Tragadera" y el botón de "PIDE AHORA" superpuestos al carrusel.</li>
+                <li>Utiliza <code>next/image</code> para una carga optimizada del logo.</li>
+                <li>Asegura que el logo se cargue con alta prioridad (<code>priority</code>).</li>
+                <li>Centra el logo horizontalmente y lo hace responsivo.</li>
+            </ul>
+        </div>
+
+        <div class="component">
+            <h4>Logo.tsx</h4>
+            <p><strong>Ubicación:</strong> <code>src/components/ui/Logo.tsx</code></p>
+            <p><strong>Propósito:</strong> Componente dedicado para mostrar el logo principal del restaurante (<code>banner_principal.png</code>), asegurando su correcta visualización y optimización.</p>
+            <p><strong>Funcionalidades:</strong></p>
+            <ul>
+                <li>Utiliza <code>next/image</code> para una carga optimizada del logo.</li>
+                <li>Asegura que el logo se cargue con alta prioridad (<code>priority</code>).</li>
+                <li>Centra el logo horizontalmente y lo hace responsivo.</li>
+            </ul>
+        </div>
+
+        <div class="component">
+            <h4>HeroSection.tsx</h4>
+            <p><strong>Ubicación:</strong> <code>src/app/components/HeroSection.tsx</code></p>
+            <p><strong>Propósito:</strong> Contenedor principal de la página de inicio, ahora simplificado para presentar el logo de la marca y un llamado a la acción principal.</p>
+            <p><strong>Funcionalidades:</strong></p>
+            <ul>
+                <li>Integra el componente <code>Logo.tsx</code> para mostrar el logo principal.</li>
                 <li>Presenta un eslogan principal con una sombra de texto (<code>text-shadow-heavy</code>) para mayor legibilidad e impacto.</li>
-                <li>Incluye un subtítulo descriptivo para mayor contexto y jerarquía tipográfica.</li>
-                <li>El fondo cuenta con un degradado sutil para añadir profundidad visual.</li>
                 <li>Incluye un botón de llamado a la acción para pedir por WhatsApp.</li>
             </ul>
         </div>
