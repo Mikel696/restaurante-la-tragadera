@@ -25,7 +25,7 @@
                     <ul>
                         <li><strong>/app:</strong> Contiene los archivos de enrutamiento, páginas y layouts de la aplicación (App Router). Cada subcarpeta representa una ruta.
                             <ul>
-                                <li><code>/ (raíz)</code>: Contiene el layout global (<code>layout.tsx</code>), la página de inicio (<code>page.tsx</code>) y los estilos globales (<code>globals.css</code>). El <code>layout.tsx</code> ahora incluye metadatos SEO, integración con Google Analytics y el componente <code>FloatingWhatsAppButton</code>. El <code>body</code> de la página ahora tiene un fondo de textura de madera oscura (<code>background-image: url('/images/textures/dark-wood.png')</code>) para una identidad visual más fuerte.</li>
+                                <li><code>/ (raíz)</code>: Contiene el layout global (<code>layout.tsx</code>), la página de inicio (<code>page.tsx</code>) y los estilos globales (<code>globals.css</code>). El <code>layout.tsx</code> ahora incluye metadatos SEO, integración con Google Analytics y el componente <code>FloatingWhatsAppButton</code>. El <code>body</code> de la página ahora tiene un fondo de textura de madera oscura (<code>background-image: url('/images/textures/dark-wood-texture.png')</code>) para una identidad visual más fuerte.</li>
                                 <li><code>/menu</code>: Página para el menú del restaurante.</li>
                                 <li><code>/contacto</code>: Página para la información de contacto.</li>
                             </ul>
@@ -60,7 +60,7 @@
         <div class="component">
             <h4>Header.tsx</h4>
             <p><strong>Ubicación:</strong> <code>src/components/layout/Header.tsx</code></p>
-            <p><strong>Propósito:</strong> Es la barra de navegación principal, fija en la parte superior y totalmente responsiva. Reconstruido con el componente <code>NavigationMenu</code> de Shadcn/UI para los enlaces de navegación y el componente <code>Button</code> de Shadcn/UI para el llamado a la acción de WhatsApp.</p>
+            <p><strong>Propósito:</strong> Es la barra de navegación principal, fija en la parte superior y totalmente responsiva. Reconstruido con el componente <code>NavigationMenu</code> de Shadcn/UI para los enlaces de navegación y el componente <code>Button</code> de Shadcn/UI para el llamado a la acción de WhatsApp. El logo de texto ha sido reemplazado por una imagen para usar la tipografía personalizada de la marca.</p>
             <p><strong>Funcionalidades:</strong></p>
             <ul>
                 <li>Es un Componente de Cliente ('use client') que usa estado para el menú móvil.</li>
@@ -97,7 +97,7 @@
         <div class="component">
             <h4>HeroSection.tsx</h4>
             <p><strong>Ubicación:</strong> <code>src/app/components/HeroSection.tsx</code></p>
-            <p><strong>Propósito:</strong> Contenedor principal de la página de inicio, ahora simplificado para presentar el logo de la marca y un llamado a la acción principal.</p>
+            <p><strong>Propósito:</strong> Contenedor principal de la página de inicio, ahora simplificado para presentar el logo de la marca y un llamado a la acción principal. Su altura ha sido ajustada para mejorar la visibilidad del contenido.</p>
             <p><strong>Funcionalidades:</strong></p>
             <ul>
                 <li>Integra el componente <code>Logo.tsx</code> para mostrar el logo principal.</li>
