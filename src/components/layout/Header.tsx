@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { FaBars, FaTimes } from 'react-icons/fa'; // For mobile toggle icons
 
 import {
   NavigationMenu,
