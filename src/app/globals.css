@@ -55,8 +55,13 @@
     @apply border-border;
   }
   body {
-    background-color: #1f140e; /* Tono café madera oscuro y elegante */
-    color: white; /* Aseguramos que el texto sea legible por defecto */
+    /* Usamos el color de fondo como fallback */
+    background-color: #1f140e;
+    /* Aplicamos la textura de madera. Asegúrate de tener una imagen seamless en la ruta */
+    background-image: url('/images/textures/dark-wood.png');
+    background-size: cover;
+    background-attachment: fixed; /* Efecto parallax elegante */
+    color: white;
     @apply font-roboto; /* Apply Roboto to body */
   }
   h1, h2 {
