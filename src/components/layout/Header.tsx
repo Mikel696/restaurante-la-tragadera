@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { FaBars, FaTimes } from 'react-icons/fa'; // For mobile toggle icons
+import Image from 'next/image';
 
 import {
   NavigationMenu,
@@ -25,7 +25,8 @@ const Header = () => {
         {/* Logo */}
         <div>
           <Link href="/" className="text-2xl font-bold text-white hover:text-brand-yellow transition-colors">
-            La Tragadera
+            {/* Se ha utilizado un placeholder mientras no se dispone del logo en formato png transparente */}
+            <Image src="https://via.placeholder.com/180x50.png?text=La+Tragadera" alt="La Tragadera" width={180} height={50} />
           </Link>
         </div>
 

@@ -55,14 +55,14 @@
     @apply border-border;
   }
   body {
-    /* Usamos el color de fondo como fallback */
-    background-color: #1f140e;
-    /* Aplicamos la textura de madera. Asegúrate de tener una imagen seamless en la ruta */
-    background-image: url('/images/textures/dark-wood.png');
+    /* Color base extraído del logo como fallback */
+    background-color: #1a110d;
+    /* Imagen de textura sutil de madera oscura */
+    background-image: url('/images/textures/dark-wood-texture.png');
+    /* Asegura que la textura cubra todo y se mantenga fija al hacer scroll */
     background-size: cover;
-    background-attachment: fixed; /* Efecto parallax elegante */
+    background-attachment: fixed;
     color: white;
-    @apply font-roboto; /* Apply Roboto to body */
   }
   h1, h2 {
     @apply font-yanone; /* Apply Yanone Kaffeesatz to h1, h2 */
