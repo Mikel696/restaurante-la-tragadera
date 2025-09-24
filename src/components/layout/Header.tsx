@@ -26,8 +26,13 @@ const Header = () => {
         {/* Logo */}
         <div>
           <Link href="/" className="text-2xl font-bold text-white hover:text-brand-yellow transition-colors">
-            {/* Se ha utilizado un placeholder mientras no se dispone del logo en formato png transparente */}
-            <Image src="https://via.placeholder.com/180x50.png?text=La+Tragadera" alt="La Tragadera" width={180} height={50} />
+                    <Image 
+          src="/images/logo-texto.png" 
+          alt="Logo La Tragadera" 
+          width={200} // Ajusta el ancho según sea necesario
+          height={50}  // Ajusta la altura según sea necesario
+          className="h-auto"
+        />
           </Link>
         </div>
 

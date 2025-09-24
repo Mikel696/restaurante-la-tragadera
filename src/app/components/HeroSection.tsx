@@ -3,8 +3,10 @@ import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
   return (
-    <section className="flex py-16 md:py-24 flex-col items-center justify-center space-y-8 p-4 text-center">
-      <Logo />
+    <section className="flex py-12 md:py-20 flex-col items-center justify-center space-y-8 p-4 text-center">
+      <div className="w-full max-w-lg mx-auto"> 
+        <Logo />
+      </div>
       <div className="space-y-4">
         <h2 className="text-3xl font-extrabold uppercase tracking-wider text-primary md:text-4xl text-shadow-heavy">
           Porque el Hambre no se Negocia
